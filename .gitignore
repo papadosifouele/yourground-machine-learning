@@ -1,0 +1,19 @@
+# Data files (too large or contain sensitive info)
+data/yourground_ml_features.csv
+*.graphml
+*.pkl
+*.gpkg
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
