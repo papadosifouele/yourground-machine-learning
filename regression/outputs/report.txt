@@ -1,0 +1,49 @@
+======================================================================
+RANDOM FOREST REGRESSION — STRESS SCORE (0-5 gradient)
+======================================================================
+Features: 80  |  n = 2,943  |  Trees: 500
+
+  CV R²  : 0.1236  (+/-0.0409)
+  CV MAE : 1.2951  (+/-0.0336)
+
+----------------------------------------------------------------------
+HOLD-OUT TEST SET (20%)
+----------------------------------------------------------------------
+  R²   : 0.1641  (variance in stress explained by the model)
+  MAE  : 1.3166  (avg prediction error in stress units, scale 0-5)
+  RMSE : 1.5986
+
+  Interpretation:
+  The model explains 16.4% of variance in perceived stress scores.
+  On average, predictions are off by 1.32 points on the 0-5 scale.
+  The remaining variance reflects personal, social, and contextual factors
+  not captured by the physical environment alone.
+
+----------------------------------------------------------------------
+FEATURE IMPORTANCES (top 25)
+----------------------------------------------------------------------
+  ss2_edge_length                   0.0966  ###################
+  ss2_mean_depth                    0.0824  ################
+  ss2_integration_local             0.0757  ###############
+  ss_choice                         0.0556  ###########
+  is_daylight                       0.0445  ########
+  natural_surfaces                  0.0330  ######
+  zone_parkland                     0.0290  #####
+  fencing_barriers                  0.0257  #####
+  road_traffic                      0.0247  ####
+  brick_surfaces                    0.0237  ####
+  ss2_connectivity                  0.0236  ####
+  lighting_infrastructure           0.0227  ####
+  tree_canopy                       0.0189  ###
+  concrete_dominance                0.0182  ###
+  asphalt_path                      0.0168  ###
+  enclosure                         0.0166  ###
+  visibility                        0.0153  ###
+  greenery                          0.0151  ###
+  vividness                         0.0142  ##
+  perceived_safety                  0.0142  ##
+  visual_complexity                 0.0140  ##
+  blank_walls                       0.0139  ##
+  glass_facades                     0.0135  ##
+  people_present                    0.0134  ##
+  graffiti                          0.0132  ##

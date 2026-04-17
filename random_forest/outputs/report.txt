@@ -1,0 +1,97 @@
+======================================================================
+RANDOM FOREST — PERCEIVED SAFETY (stress_binary)
+======================================================================
+Features: 80  |  Rows: 3,420  |  Trees: 500
+
+SMOTE applied: training set balanced to 50/50
+CV F1 (5-fold): 0.6830  (+/-0.0184)
+
+----------------------------------------------------------------------
+HOLD-OUT TEST SET (20%, n=684)
+----------------------------------------------------------------------
+  Accuracy : 0.6272
+  ROC-AUC  : 0.6204
+
+                  precision    recall  f1-score   support
+    
+      Low stress       0.55      0.41      0.47       276
+     High stress       0.66      0.78      0.71       408
+    
+        accuracy                           0.63       684
+       macro avg       0.61      0.59      0.59       684
+    weighted avg       0.62      0.63      0.61       684
+
+  Confusion matrix (rows=actual, cols=predicted):
+                     Pred Low  Pred High
+    Actual Low            112        164
+    Actual High            91        317
+
+----------------------------------------------------------------------
+FEATURE IMPORTANCES (mean decrease impurity, all features)
+----------------------------------------------------------------------
+  ss2_integration_local             0.0762  ###############
+  ss2_mean_depth                    0.0744  ##############
+  ss2_edge_length                   0.0574  ###########
+  ss_choice                         0.0409  ########
+  road_traffic                      0.0286  #####
+  ss2_connectivity                  0.0270  #####
+  fencing_barriers                  0.0268  #####
+  brick_surfaces                    0.0261  #####
+  natural_surfaces                  0.0254  #####
+  asphalt_path                      0.0245  ####
+  lighting_infrastructure           0.0236  ####
+  tree_canopy                       0.0233  ####
+  concrete_dominance                0.0227  ####
+  enclosure                         0.0221  ####
+  visual_complexity                 0.0216  ####
+  greenery                          0.0215  ####
+  perceived_safety                  0.0202  ####
+  perceived_upkeep                  0.0200  ####
+  maintenance_level                 0.0197  ###
+  activity_level                    0.0196  ###
+  vividness                         0.0194  ###
+  visibility                        0.0190  ###
+  brightness                        0.0189  ###
+  blank_walls                       0.0185  ###
+  active_frontage                   0.0180  ###
+  lighting_quality                  0.0178  ###
+  garbage_litter                    0.0161  ###
+  colour_warmth                     0.0161  ###
+  ss_connectivity                   0.0157  ###
+  zone_unclassified                 0.0144  ##
+  glass_facades                     0.0141  ##
+  people_present                    0.0137  ##
+  unkempt_vegetation                0.0133  ##
+  is_daylight                       0.0123  ##
+  benches_seating                   0.0121  ##
+  environment_Public_park           0.0121  ##
+  activity_Walking                  0.0114  ##
+  graffiti                          0.0091  #
+  zone_residential                  0.0078  #
+  zone_parkland                     0.0074  #
+  activity_Dog_walking              0.0074  #
+  environment_On_the_street         0.0072  #
+  is_dawn_dusk                      0.0069  #
+  environment_Trail                 0.0067  #
+  environment_Sporting_facility     0.0058  #
+  activity_Running                  0.0057  #
+  zone_commercial                   0.0042  
+  environment_Public_transport      0.0039  
+  activity_Relaxing                 0.0038  
+  activity_Cycling                  0.0038  
+  environment_Parking_lot           0.0029  
+  environment_Playground            0.0029  
+  activity_Walk_commute             0.0026  
+  zone_transport                    0.0026  
+  environment_Waterfront_Promenade  0.0024  
+  activity_Public_event             0.0023  
+  activity_Commuting                0.0021  
+  activity_Walk_shop                0.0020  
+  activity_Team_sport_activity      0.0018  
+  activity_Shopping                 0.0017  
+  environment_Beach                 0.0016  
+  activity_Other_leisure_activity   0.0013  
+  cctv_visible                      0.0011  
+  environment_Laneway               0.0011  
+  environment_Underpass             0.0011  
+  activity_Walk_car                 0.0010  
